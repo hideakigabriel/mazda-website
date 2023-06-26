@@ -1,7 +1,3 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-
 .main {
   display: flex;
   flex-direction: column;
@@ -42,18 +38,11 @@
   color: #F2F2F2;
 }
 
-/* .container {
-  width: 100%;
-  height: 50rem;
-  margin: auto;
-  position: relative;
-} */
-
 .bgSizeCover {
   height: 50em;
   background-image: url("https://www.hdcarwallpapers.com/download/2021_mazda3_skyactiv_g_awd_turbo_hatchback_5k-3840x2160.jpg");
   background-size: cover;
-  filter: opacity(75%);
+  /* filter: opacity(75%); */
 }
 
 .bgSizeCover .hero_left{
@@ -87,7 +76,52 @@
   transform: scale(1.05);
 }
 
-.bgSizeCover .text {
-  font-family: 'Archivo', sans-serif;
+.bgSizeCover .text_Title {
+  font-family: Mortend, sans-serif;
+  font-weight: 400;
   font-size: 4.3em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+  width: 100%; 
+  margin-top: 3rem;
+  padding: 8% 15%;
+}
+
+.leftContainer {
+  border-top: solid 2px;
+  border-color: #FFF;
+  padding: 54px 20px;
+}
+
+.text_Subtitle {
+  font-family: Mortend, sans-serif;
+  font-weight: 400;
+  font-size: 2.3em;
+  line-weight: 2px;
+}
+
+.rightContainer {
+  height: 350px;
+  /* background-image: url("https://www.insidemazda.co.uk/wp-content/uploads/2022/11/CX_5_Group_Statics_-8-Copy.jpg");
+  background-size: cover; */
+}
+
+/* Footer */
+
+.footer_socialMedia {
+  margin-top: 20px;
+  height: 48px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 3rem 0;
+  border: solid 2px;
+  border-color: #FFF;
 }
