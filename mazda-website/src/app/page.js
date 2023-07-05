@@ -27,8 +27,8 @@ export default function Home() {
             </h1>
           </div>
           <div className={styles.hero_right}>
-            <p>All models</p>
-            <img src="/icon-detail.svg" alt="" height={55}/>
+            <a>All models</a>
+            <img src="/icon-detail.svg" alt="" height={55} />
           </div>
         </div>
       </section>
@@ -45,40 +45,91 @@ export default function Home() {
             Creating an emotional connection between the car and the driver, which feel like a deep bond between a rider and his/her house.
             Mazda's "KODO DESIGN" is an expression that makes an ongoing pursuit of the from that reflects sch connection.
           </p>
-       
+
           <p>
-            Mazda is committed to further to developing the "KODO DESIGN" and create an expression of "redefined elegance" rooted in Japanese aesthetics. 
+            Mazda is committed to further to developing the "KODO DESIGN" and create an expression of "redefined elegance" rooted in Japanese aesthetics.
           </p>
-          <div>
+          <div className={styles.wrapLinkList}>
             <a href="">Museum</a>
             <a href="">Innovations</a>
             <a href="">Our mission</a>
             <div className={styles.hero_right}>
-            <p>Design vision</p>
-            <img src="/icon-detail.svg" alt="" height={15}/>
-          </div>
+              <a href="">Design vision</a>
+              <img src="/icon-detail.svg" alt="" height={30} />
+            </div>
           </div>
         </div>
 
         {/* Right */}
-        <div className={styles.rightContainer}> 
-        <img src="https://www.insidemazda.co.uk/wp-content/uploads/2022/11/CX_5_Group_Statics_-8-Copy.jpg" alt="MAZDA CX-5" width={700}/>
+        <div className={styles.rightContainer}>
+          <img src="https://www.insidemazda.co.uk/wp-content/uploads/2022/11/CX_5_Group_Statics_-8-Copy.jpg" alt="MAZDA CX-5" width={700} />
         </div>
       </section>
 
-      {/* Footer */}
-      <section className={styles.layout}>
+      {/* Third section */}
+
+      <section className={styles.container}>
+        {/* Left */}
+        <div className={styles.leftContainer}>
+          <h1 className={styles.text_Subtitle}>
+            THE AMAZING<br />MODELS
+          </h1>
+          <p>
+            When creating new Mazda, we never make drastic changes, but always make noticeable and important changes. Each model update qualities.
+            Therefore, updating any Mazda models is not a revolution. This is evolution. Progress from the best to excellent.
+          </p>
+          <div className={styles.hero_right}>
+            <a href="">All models</a>
+            <img src="/icon-detail.svg" alt="" height={55} />
+          </div>
+        </div>
+      </section>
+
+      {/* Social media footer */}
+      {/* <section className={styles.layout}>
         <footer className={styles.footer_socialMedia}>
           <img src="/mazda-logo.png" alt="Mazda logo" className={styles.mazda_Logo} />
           <nav className={styles.nav}>
-            <a href="#">Instagram</a>
-            <a href="#">Pinterest</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Github</a>
             <a href="#">Youtube</a>
             <a href="#">Facebook</a>
           </nav>
         </footer>
-      </section>
+      </section> */}
 
+      {/* Newsletter */}
+
+
+
+      {/* Footer */}
+
+      {/* <section className={styles.layout}>
+        <footer className={styles.footer_socialMedia}>
+          <a href="#">©Mazda Motors inc.</a>
+          <nav className={styles.nav}>
+            <a href="#">Terms and conditions</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Designed by Hideaki Design</a>
+          </nav>
+        </footer>
+      </section>*/}
+
+      {/* Footer */}
+
+      <footer>
+        <div className={styles.content}>
+          <div className={styles.top}>
+            <img src="/mazda-logo.png" alt="Mazda logo" className={styles.mazda_Logo} />
+            <nav className={styles.nav}>
+              <a href="#">Linkedin</a>
+              <a href="#">Github</a>
+              <a href="#">Youtube</a>
+              <a href="#">Facebook</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
     </div>
 
   )

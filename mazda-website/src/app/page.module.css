@@ -71,7 +71,7 @@
   transition: 0.5s;
 }
 
-.bgSizeCover .hero_right:hover {
+.hero_right:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -87,8 +87,7 @@
   flex-direction: row;
   gap: 13rem;
   width: 100%; 
-  margin-top: 3rem;
-  padding: 8% 15%;
+  padding: 5% 15%;
 }
 
 .leftContainer {
@@ -106,8 +105,21 @@
 
 .rightContainer {
   height: 350px;
-  /* background-image: url("https://www.insidemazda.co.uk/wp-content/uploads/2022/11/CX_5_Group_Statics_-8-Copy.jpg");
-  background-size: cover; */
+}
+
+.wrapLinkList {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 60%;
+}
+
+.wrapLinkList .hero_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.5s;
 }
 
 /* Footer */
@@ -122,6 +134,20 @@
   align-items: center;
   position: relative;
   padding: 3rem 0;
-  border: solid 2px;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
   border-color: #FFF;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
